@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPAÇO AG</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-phrases">
+        <span class="phrase p1">"Pela graça sois salvos..."</span>
+        <span class="phrase p2">"O Senhor é meu pastor..."</span>
+        <span class="phrase p3">"Tudo posso Naquele que me fortalece"</span>
+    </div>
+
+    <header>
+        <a href="javascript:void(0)" class="logo-link" onclick="showPage('inicio-page')">
+            <img src="img/icone-logo.png" alt="Ícone Sanctus" class="logo-icon">
+            <span class="logo-text">ESPAÇO AG - GOSPEL</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="showPage('inicio-page')">Início</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('sobre-page')">Sobre</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('contato-page')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PÁGINA INÍCIO -->
+    <div id="inicio-page" class="page active">
+
+        <section class="hero" id="inicio" data-aos="fade-up" data-aos-duration="1200">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1 class="fade-in-text">
+                    Vestindo quem você <br><em>Nasceu pra ser!</em>
+                </h1>
+            </div>
+        </section>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab(event, 'camisetas')">Camisetas</button>
+            <button class="tab-btn" onclick="showTab(event, 'biblias')">Bíblias</button>
+        </div>
+
+        <main id="colecao">
+
+            <!-- ABA CAMISETAS -->
+            <div id="camisetas" class="catalog tab-content active">
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa1-frenteverso.png',
+                        'img/camisa1-frente.png',
+                        'img/camisa1-verso.png',
+                        'Camiseta Jesus é o caminho',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase Jesus é o caminho.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa1-frente.png" alt="Camiseta Graça Frente" class="main-img">
+                        <img src="img/camisa1-verso.png" alt="Camiseta Graça Verso" class="hover-img">
+                    </div>
+                    <h3>Camiseta Jesus é o caminho</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="200"
+                     onclick="openModal(
+                        'img/camisa2-frenteverso.png',
+                        'img/moletom-fé.png',
+                        'img/moletom-fé-detalhe.png',
+                        'Camiseta Ezequiel 47:5',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase o raso não me serve mais.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/moletom-fé.png" alt="Moletom Fé Principal" class="main-img">
+                        <img src="img/moletom-fé-detalhe.png" alt="Moletom Fé Detalhe" class="hover-img">
+                    </div>
+                    <h3>Camiseta Ezequiel 47:5</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa3-frenteverso.png',
+                        'img/camisa3-frente.png',
+                        'img/camisa3-verso.png',
+                        'Camiseta Eis-me aqui',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase Eis-me aqui.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa3-frente.png" alt="Camiseta 3" class="main-img">
+                        <img src="img/camisa3-verso.png" alt="Camiseta 3" class="hover-img">
+                    </div>
+                    <h3>Camiseta Eis-me aqui</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa4-frenteverso.png',
+                        'img/camisa4-frente.png',
+                        'img/camisa4-verso.png',
+                        'Camiseta Romanos 8:15',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase Filhos pela graça.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa4-frente.png" alt="Camiseta 4" class="main-img">
+                        <img src="img/camisa4-verso.png" alt="Camiseta 4" class="hover-img">
+                    </div>
+                    <h3>Camiseta Romanos 8:15</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa5-frenteverso.png',
+                        'img/camisa5-frente.png',
+                        'img/camisa5-verso.png',
+                        'Camiseta Salmos 23:4',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase Ainda que eu ande pelo vale da sombra da morte eu não temerei.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa5-frente.png" alt="Camiseta 5" class="main-img">
+                        <img src="img/camisa5-verso.png" alt="Camiseta 5" class="hover-img">
+                    </div>
+                    <h3>Camiseta Salmos 23:4</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa6-frenteverso.png',
+                        'img/camisa6-frente.png',
+                        'img/camisa6-verso.png',
+                        'Camiseta Atos 2',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase E todos foram cheios.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa6-frente.png" alt="Camiseta 6" class="main-img">
+                        <img src="img/camisa6-verso.png" alt="Camiseta 6" class="hover-img">
+                    </div>
+                    <h3>Camiseta Atos 2</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa7-frenteverso.png',
+                        'img/camisa7-frente.png',
+                        'img/camisa7-verso.png',
+                        'Camiseta As minhas ovelhas ouvem a minha voz.',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase As minhas ovelhas ouvem a minha voz.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa7-frente.png" alt="Camiseta 7" class="main-img">
+                        <img src="img/camisa7-verso.png" alt="Camiseta 7" class="hover-img">
+                    </div>
+                    <h3>Camiseta As minhas ovelhas ouvem a minha voz</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa8-frenteverso.png',
+                        'img/camisa8-frente.png',
+                        'img/camisa8-verso.png',
+                        'Camiseta Ele é o Rei',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase Ele é o Rei.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa8-frente.png" alt="Camiseta 8" class="main-img">
+                        <img src="img/camisa8-verso.png" alt="Camiseta 8" class="hover-img">
+                    </div>
+                    <h3>Camiseta Ele é o Rei</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa9-frenteverso.png',
+                        'img/camisa9-frente.png',
+                        'img/camisa9-verso.png',
+                        'Camiseta Incondicional',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase O fogo eterno da vida.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa9-frente.png" alt="Camiseta 9" class="main-img">
+                        <img src="img/camisa9-verso.png" alt="Camiseta 9" class="hover-img">
+                    </div>
+                    <h3>Camiseta Incondicional</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa10-frenteverso.png',
+                        'img/camisa10-frente.png',
+                        'img/camisa10-verso.png',
+                        'Camiseta Jesus é a chama',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase Jesus é a chama que nunca se apaga.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa10-frente.png" alt="Camiseta 10" class="main-img">
+                        <img src="img/camisa10-verso.png" alt="Camiseta 10" class="hover-img">
+                    </div>
+                    <h3>Camiseta Jesus é a chama</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa11-frenteverso.png',
+                        'img/camisa11-frente.png',
+                        'img/camisa11-verso.png',
+                        'Camiseta João 4:6',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase The way, the truth and the life.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa11-frente.png" alt="Camiseta 11" class="main-img">
+                        <img src="img/camisa11-verso.png" alt="Camiseta 11" class="hover-img">
+                    </div>
+                    <h3>Camiseta João 4:6</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa12-frenteverso.png',
+                        'img/camisa12-frente.png',
+                        'img/camisa12-verso.png',
+                        'Camiseta Jesus é o caminho',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase Jesus é o caminho.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa12-frente.png" alt="Camiseta 12" class="main-img">
+                        <img src="img/camisa12-verso.png" alt="Camiseta 12" class="hover-img">
+                    </div>
+                    <h3>Camiseta João 4:6</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa13-frenteverso.png',
+                        'img/camisa13-frente.png',
+                        'img/camisa13-verso.png',
+                        'Camiseta Dai me um coração semelhante ao Teu',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase Dai me um coração semelhante ao Teu.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa13-frente.png" alt="Camiseta 13" class="main-img">
+                        <img src="img/camisa13-verso.png" alt="Camiseta 13" class="hover-img">
+                    </div>
+                    <h3>Camiseta Dai me um coração semelhante ao Teu</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa14-frenteverso.png',
+                        'img/camisa14-frente.png',
+                        'img/camisa14-verso.png',
+                        'Camiseta Yeshua',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase Yeshua.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa14-frente.png" alt="Camiseta 14" class="main-img">
+                        <img src="img/camisa14-verso.png" alt="Camiseta 14" class="hover-img">
+                    </div>
+                    <h3>Camiseta Yeshua</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa15-frenteverso.png',
+                        'img/camisa15-frente.png',
+                        'img/camisa15-verso.png',
+                        'Camiseta Sobre as águas',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase Sobre as águas.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa15-frente.png" alt="Camiseta 15" class="main-img">
+                        <img src="img/camisa15-verso.png" alt="Camiseta 15" class="hover-img">
+                    </div>
+                    <h3>Camiseta Sobre as águas</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa16-frenteverso.png',
+                        'img/camisa16-frente.png',
+                        'img/camisa16-verso.png',
+                        'Camiseta O Senhor é meu pastor',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase O Senhor é meu pastor.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa16-frente.png" alt="Camiseta 16" class="main-img">
+                        <img src="img/camisa16-verso.png" alt="Camiseta 16" class="hover-img">
+                    </div>
+                    <h3>Camiseta O Senhor é meu pastor</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     onclick="openModal(
+                        'img/camisa17-frenteverso.png',
+                        'img/camisa17-frente.png',
+                        'img/camisa17-verso.png',
+                        'Camiseta O Amor me amou',
+                        'R$ 89,90',
+                        'Camiseta de tecido suedine, camiseta oversized e streetwear com a frase O Amor me amou.'
+                     )">
+                    <div class="img-container">
+                        <img src="img/camisa17-frente.png" alt="Camiseta 17" class="main-img">
+                        <img src="img/camisa17-verso.png" alt="Camiseta 17" class="hover-img">
+                    </div>
+                    <h3>Camiseta O Amor me amou</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+            </div>
+
+            <!-- ABA BÍBLIAS -->
+            <div id="biblias" class="catalog tab-content">
+
+                <div class="product-card"
+                     onclick="openModal(
+                        'img/biblia1.png',
+                        'img/biblia1.png',
+                        'img/biblia1.png',
+                        'Bíblia Sagrada - Yeshua Azul',
+                        'R$ 69,90',
+                        'Bíblia com acabamento elegante, ideal para leitura, estudo e presente.'
+                     )">
+                    <div class="img-container zoom-only">
+                        <img src="img/biblia1.png" alt="Bíblia Sagrada" class="main-img">
+                    </div>
+                    <h3>Bíblia Sagrada - Yeshua Azul</h3>
+                    <p class="price">R$ 69,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     onclick="openModal(
+                        'img/biblia2.png',
+                        'img/biblia2.png',
+                        'img/biblia2.png',
+                        'Bíblia Sagrada - Leão de Judá com heterocromia',
+                        'R$ 69,90',
+                        'Bíblia com acabamento elegante, ideal para leitura, estudo e presente.'
+                     )">
+                    <div class="img-container zoom-only">
+                        <img src="img/biblia2.png" alt="Bíblia Sagrada" class="main-img">
+                    </div>
+                    <h3>Bíblia Sagrada - Leão de Judá com heterocromia</h3>
+                    <p class="price">R$ 69,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     onclick="openModal(
+                        'img/biblia3.png',
+                        'img/biblia3.png',
+                        'img/biblia3.png',
+                        'Bíblia Sagrada - Leão de Judá coroa',
+                        'R$ 69,90',
+                        'Bíblia com acabamento elegante, ideal para leitura, estudo e presente.'
+                     )">
+                    <div class="img-container zoom-only">
+                        <img src="img/biblia3.png" alt="Bíblia Sagrada" class="main-img">
+                    </div>
+                    <h3>Bíblia Sagrada - Leão de Judá coroa</h3>
+                    <p class="price">R$ 69,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     onclick="openModal(
+                        'img/biblia4.png',
+                        'img/biblia4.png',
+                        'img/biblia4.png',
+                        'Bíblia Sagrada - Yeshua',
+                        'R$ 69,90',
+                        'Bíblia com acabamento elegante, ideal para leitura, estudo e presente.'
+                     )">
+                    <div class="img-container zoom-only">
+                        <img src="img/biblia4.png" alt="Bíblia Sagrada" class="main-img">
+                    </div>
+                    <h3>Bíblia Sagrada - Yeshua</h3>
+                    <p class="price">R$ 69,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     onclick="openModal(
+                        'img/biblia5.png',
+                        'img/biblia5.png',
+                        'img/biblia5.png',
+                        'Bíblia Sagrada - Leão seja forte e corajoso',
+                        'R$ 69,90',
+                        'Bíblia com acabamento elegante, ideal para leitura, estudo e presente.'
+                     )">
+                    <div class="img-container zoom-only">
+                        <img src="img/biblia5.png" alt="Bíblia Sagrada" class="main-img">
+                    </div>
+                    <h3>Bíblia Sagrada - Leão seja forte e corajoso</h3>
+                    <p class="price">R$ 69,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     onclick="openModal(
+                        'img/biblia6.png',
+                        'img/biblia6.png',
+                        'img/biblia6.png',
+                        'Bíblia Sagrada - Quem crê vence',
+                        'R$ 69,90',
+                        'Bíblia com acabamento elegante, ideal para leitura, estudo e presente.'
+                     )">
+                    <div class="img-container zoom-only">
+                        <img src="img/biblia6.png" alt="Bíblia Sagrada" class="main-img">
+                    </div>
+                    <h3>Bíblia Sagrada - Quem crê vence</h3>
+                    <p class="price">R$ 69,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     onclick="openModal(
+                        'img/biblia7.png',
+                        'img/biblia7.png',
+                        'img/biblia7.png',
+                        'Bíblia Sagrada - Eu sou filha do Rei azul',
+                        'R$ 69,90',
+                        'Bíblia com acabamento elegante, ideal para leitura, estudo e presente.'
+                     )">
+                    <div class="img-container zoom-only">
+                        <img src="img/biblia7.png" alt="Bíblia Sagrada" class="main-img">
+                    </div>
+                    <h3>Bíblia Sagrada - Eu sou filha do Rei azul</h3>
+                    <p class="price">R$ 69,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     onclick="openModal(
+                        'img/biblia8.png',
+                        'img/biblia8.png',
+                        'img/biblia8.png',
+                        'Bíblia Sagrada - Eu sou filha do Rei rosa',
+                        'R$ 69,90',
+                        'Bíblia com acabamento elegante, ideal para leitura, estudo e presente.'
+                     )">
+                    <div class="img-container zoom-only">
+                        <img src="img/biblia8.png" alt="Bíblia Sagrada" class="main-img">
+                    </div>
+                    <h3>Bíblia Sagrada - Eu sou filha do Rei rosa</h3>
+                    <p class="price">R$ 69,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     onclick="openModal(
+                        'img/biblia9.png',
+                        'img/biblia9.png',
+                        'img/biblia9.png',
+                        'Bíblia Sagrada - Deus cuida de mim',
+                        'R$ 69,90',
+                        'Bíblia com acabamento elegante, ideal para leitura, estudo e presente.'
+                     )">
+                    <div class="img-container zoom-only">
+                        <img src="img/biblia9.png" alt="Bíblia Sagrada" class="main-img">
+                    </div>
+                    <h3>Bíblia Sagrada - Deus cuida de mim</h3>
+                    <p class="price">R$ 69,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+                <div class="product-card"
+                     onclick="openModal(
+                        'img/biblia10.png',
+                        'img/biblia10.png',
+                        'img/biblia10.png',
+                        'Bíblia Sagrada - Seja forte e corajosa',
+                        'R$ 69,90',
+                        'Bíblia com acabamento elegante, ideal para leitura, estudo e presente.'
+                     )">
+                    <div class="img-container zoom-only">
+                        <img src="img/biblia10.png" alt="Bíblia Sagrada" class="main-img">
+                    </div>
+                    <h3>Bíblia Sagrada - Seja forte e corajosa</h3>
+                    <p class="price">R$ 69,90</p>
+                    <button class="btn-detail">Explorar</button>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- PÁGINA SOBRE -->
+    <section id="sobre-page" class="page sobre-section">
+        <div class="sobre-container">
+            <h2 class="sobre-titulo">Sobre a ESPAÇO AG - GOSPEL</h2>
+
+            <p class="sobre-texto">
+                A <strong>ESPAÇO AG - GOSPEL</strong> nasceu com um propósito que vai muito além da moda. Somos uma marca criada com fé, identidade e amor, com a missão de transmitir uma mensagem viva através de tudo aquilo que vestimos e apresentamos ao mundo.
+            </p>
+
+            <p class="sobre-texto">
+                Nosso lema, <em>“Vestindo quem você nasceu pra ser”</em>, expressa exatamente o que acreditamos. Para nós, cada pessoa carrega um chamado, uma essência e um propósito únicos. E a forma como nos apresentamos também pode comunicar aquilo que Deus plantou dentro de nós.
+            </p>
+
+            <p class="sobre-texto">
+                A ESPAÇO AG - GOSPEL é fruto da união da nossa família. Somos cinco membros trabalhando juntos, colocando dedicação, criatividade e fé em cada detalhe. Nossa mãe já tinha uma loja, e a partir dessa base que já existia em nossa história, entendemos que poderíamos dar um passo além: transformar esse trabalho em um meio de espalhar o Evangelho.
+            </p>
+
+            <p class="sobre-texto">
+                Foi assim que decidimos construir algo com propósito verdadeiro. Mais do que vender produtos, desejamos tocar vidas, inspirar pessoas e levar mensagens que fortaleçam a fé, tragam identidade e despertem corações. Cada peça, cada estampa e cada detalhe carrega a intenção de lembrar alguém de quem ela nasceu para ser.
+            </p>
+
+            <p class="sobre-texto">
+                Acreditamos que a moda também pode ser instrumento de luz. Em um tempo em que tantas vozes tentam definir a identidade das pessoas, queremos ser uma marca que aponta de volta para a verdade, para a essência e para aquilo que vem de Deus.
+            </p>
+
+            <p class="sobre-texto">
+                Nossa caminhada está só começando, mas ela já nasceu sustentada por propósito. Seguimos como família, com amor pelo que fazemos e com a convicção de que tudo aquilo que é feito para glorificar a Deus pode alcançar lugares muito maiores do que imaginamos.
+            </p>
+
+            <p class="sobre-texto destaque">
+                ESPAÇO AG - GOSPEL — vestindo uma geração com propósito, fé e identidade.
+            </p>
+        </div>
+    </section>
+
+    <!-- PÁGINA CONTATO -->
+    <section id="contato-page" class="page contato-section">
+    <div class="contato-container">
+        <h2 class="contato-titulo">Contato</h2>
+
+        <p class="contato-texto">
+            Fale com a gente para tirar dúvidas, fazer pedidos ou conhecer mais sobre a ESPAÇO AG - GOSPEL.
+        </p>
+
+        <div class="contato-botoes">
+            <a class="btn-whatsapp contato-btn" href="https://wa.me/5517992613608" target="_blank">
+                WhatsApp - Atendimento 1
+            </a>
+
+            <a class="btn-whatsapp contato-btn" href="https://wa.me/5517988025658" target="_blank">
+                WhatsApp - Atendimento 2
+            </a>
+
+            <a class="btn-instagram contato-btn" href="https://instagram.com/espacoaggospel" target="_blank">
+                Ir para o Instagram
+            </a>
+        </div>
+    </div>
+</section>
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <div class="modal-content">
+            <div class="slider-container">
+                <button class="prev" type="button" onclick="changeImg(-1)">&#10094;</button>
+                <img id="modal-img" src="" alt="Imagem ampliada do produto">
+                <button class="next" type="button" onclick="changeImg(1)">&#10095;</button>
+            </div>
+
+            <div class="product-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price"></p>
+                <p id="modal-description"></p>
+                <a id="whatsapp-link" href="#" target="_blank" class="btn-whatsapp">Pedir pelo WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+    <script src="script.js"></script>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h3>ESPAÇO AG - GOSPEL</h3>
+            <p class="footer-slogan">Vestindo quem você nasceu pra ser.</p>
+        </div>
+
+        <div class="footer-info">
+            <p>CNPJ: 29.228.735/0001-59</p>
+            <p>São José do Rio Preto - SP</p>
+            <p>espacoaggospel@gmail.com</p>
+        </div>
+
+        <div class="footer-contact">
+            <a href="https://wa.me/5517992613608" target="_blank">WhatsApp</a>
+            <a href="https://instagram.com/espacoaggospel" target="_blank">Instagram</a>
+        </div>
+
+        <div class="footer-copy">
+            <p>© 2026 ESPAÇO AG - GOSPEL</p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
